@@ -1,3 +1,25 @@
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/SourceSans3-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3 var";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: "Regular";
+  /* This works: *
+  src: url("../fonts/SourceSans3-Regular.woff2") format("woff2");
+  /* This hangs: */
+  src: url("../fonts//SourceSans3-Regular.woff2") format("woff2");
+}
+
 .text {
     color: blue;
+    font-family: "Source Sans 3", sans-serif;
 }
